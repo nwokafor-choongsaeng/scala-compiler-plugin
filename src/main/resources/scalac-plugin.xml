@@ -1,0 +1,4 @@
+<plugin>
+    <name>transform</name>
+    <classname>org.example.Transform</classname>
+</plugin>
