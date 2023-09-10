@@ -1,6 +1,6 @@
 package org.example
 
-import morphir.ir.{AccessControlled, Distribution, Module, Name, Package, Path}
+import morphir.ir.{AccessControlled, Distribution, Module, Name, Package, Path, Type}
 import morphir.ir.Documented.Documented
 import morphir.ir.FQName.fqn
 
@@ -247,7 +247,7 @@ class Transform(val global: Global) extends Plugin {
 
                         case t =>
                             println(showRaw(t))
-                            global.reporter.error(coreType.typeSymbol., s"Unknown type ${coreType.typeSymbol.fullName}")
+//                            global.reporter.error(coreType.typeSymbol., s"Unknown type ${coreType.typeSymbol.fullName}")
                             morphir.ir.Type.Unit({})
 
                     }
